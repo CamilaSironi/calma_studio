@@ -1,0 +1,45 @@
+---
+import "../styles/styles.css";
+---
+
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Calma Studio</title>
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+
+        :root {
+            --bg: #e6e6e6;
+            --text: #7e5656ff;
+        }
+
+        html, body {
+            margin: 0;
+            padding: 0;
+            background: var(--bg);
+            color: var(--text);
+            min-height: 100vh;
+        }
+
+    </style>
+
+    </head>
+
+    <body>
+
+         <div style="margin-left: 12px; color: var(--text);">
+            Um convite ao equilibrio
+         </div>
+
+        <main>
+        <slot />
+        </main>
+    
+    </body>
+</html>
