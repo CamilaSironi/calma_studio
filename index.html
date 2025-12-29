@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Calma Studio</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500&display=swap"
+    rel="stylesheet"
+  >
+
+  <link rel="stylesheet" href="./styles/styles.css">
+</head>
+<body>
+  <!-- Hero -->
+  <section id="hero" class="hero">
+    <nav class="nav">
+      <a href="#about">About</a>
+      <a href="#treatments">Treatments</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <div class="titles reveal">
+      <h1>Calma Studio</h1>
+      <h3>Um convite ao equilíbrio</h3>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="about reveal">
+    <div class="about-card">
+      <div class="about-text">
+        <h2>Sobre o Calma Studio</h2>
+        <p>O Calma Studio nasceu do desejo de criar um refúgio onde o tempo desacelera.</p>
+        <p>Um espaço dedicado ao cuidado integral, onde cada detalhe é pensado para proporcionar equilíbrio, presença e relaxamento profundo.</p>
+        <p>Acreditamos que o bem-estar vai além do físico. Por isso, unimos técnicas terapêuticas, ambiente acolhedor e uma experiência sensorial completa para cuidar de você por inteiro.</p>
+      </div>
+
+      <div class="about-image">
+        <img src="./assets/aboutPic.png" alt="Calma Studio" />
+      </div>
+    </div>
+  </section>
+
+  <!-- Treatments -->
+  <section id="treatments" class="treatments">
+
+      <h2 class="reveal">Nossos Tratamentos</h2>
+
+      <div class="treatments-grid">
+        <article class="treatment-card">
+          <img src="./assets/treatments/stone_treatment.avif" alt="Tratamento com pedras quentes" loading="lazy"/>
+          <span>Pedras Quentes</span>
+        </article>
+
+        <article class="treatment-card">
+          <img src="./assets/treatments/face_treatment.avif" alt="Tratamento facial" loading="lazy"/>
+          <span>Facial</span>
+        </article>
+
+        <article class="treatment-card">
+          <img src="./assets/treatments/massage.jpg" alt="Massagem relaxante" loading="lazy"/>
+          <span>Massagem Relaxante</span>
+        </article>
+
+        <article class="treatment-card">
+          <img src="./assets/treatments/feet_treatment.avif" alt="Tratamento de pés" loading="lazy"/>
+          <span>Tratamento de Pés</span>
+        </article>
+      </div>
+
+      <a href="/tratamentos.html" class="see-all">
+        <span>ver tudo</span>
+        <span class="arrow">></span>
+      </a>
+
+  </section>
+
+  <!-- Reviews -->
+  <section id="reviews" class="reviews">
+      <h2 class="reveal">O que dizem sobre nós</h2>
+      <section class="slider-section">
+        <div class="slider">
+          <div class="track">
+            <div class="slide">
+              <p>
+                  “Um espaço que realmente transmite calma. Saí do tratamento sentindo
+                  leveza no corpo e na mente.”
+              </p>
+              <span>— Mariana S.</span>
+            </div>
+            <div class="slide">
+              <p>
+                  “Desde o ambiente até o atendimento, tudo é pensado com muito cuidado.
+                  Uma experiência única.”
+              </p>
+              <span>— Lucas R.</span>
+            </div>
+            <div class="slide">
+                  <p>
+                  “O melhor momento da minha semana. O Calma Studio virou um ritual.”
+              </p>
+              <span>— Fernanda M.</span>
+            </div>
+            <div class="slide">
+              <p>
+                  “Um espaço que realmente transmite calma. Saí do tratamento sentindo
+                  leveza no corpo e na mente.”
+              </p>
+              <span>— Mariana S.</span>
+            </div>
+            <div class="slide">
+              <p>
+                  “Desde o ambiente até o atendimento, tudo é pensado com muito cuidado.
+                  Uma experiência única.”
+              </p>
+              <span>— Lucas R.</span>
+            </div>
+            <div class="slide">
+              <p>
+                  “O melhor momento da minha semana. O Calma Studio virou um ritual.”
+              </p>
+              <span>— Fernanda M.</span>
+            </div>
+          </div>
+        </div>
+      </section>
+  </section>
+
+  <!-- Appointment -->
+  <section id="appointment" class="appointment reveal">
+    <div class="card">
+      <h2>Agendar um turno</h2>
+      <p class="subtitle">Reserve seu momento de cuidado</p>
+
+      <form id="appointment-form">
+        <div class="field">
+          <label>Nome</label>
+          <input type="text" required placeholder="Seu nome" />
+        </div>
+
+        <div class="field">
+          <label>Email</label>
+          <input type="email" required placeholder="seu@email.com" />
+        </div>
+
+        <div class="field">
+          <label>Tratamento</label>
+          <select required>
+            <option value="">--</option>
+            <option>Tratamento com pedras quentes</option>
+            <option>Tratamento facial</option>
+            <option>Massagem relaxante</option>
+            <option>Tratamento de pés</option>
+          </select>
+        </div>
+
+        <div class="row">
+          <div class="field">
+            <label>Data</label>
+            <input type="date" required />
+          </div>
+
+          <div class="field">
+            <label>Horário</label>
+            <select required>
+              <option value="">--</option>
+              <option>09:00</option>
+              <option>10:30</option>
+              <option>12:00</option>
+              <option>14:00</option>
+              <option>16:00</option>
+              <option>18:00</option>
+            </select>
+          </div>
+        </div>
+
+        <button type="submit">Confirmar turno</button>
+
+        <p class="success" hidden>
+          ✨ Seu turno foi reservado com sucesso! </br>
+          Você receberá um e-mail com todas as informações.
+        </p>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer reveal" id="contact">
+  <div class="footer-content">
+    <h2 class="footer-title">Calma Studio</h2>
+
+    <p class="footer-text">
+      Obrigada por nos visitar </br>
+      Que este seja o início do seu momento de pausa e equilíbrio
+    </p>
+
+    <div class="socials">
+      <a href="#" aria-label="Instagram">Instagram</a>
+      <a href="#" aria-label="WhatsApp">WhatsApp</a>
+      <a href="#" aria-label="Facebook">Facebook</a>
+    </div>
+
+    <p class="footer-text"> 
+        © 2025 · Camila Sironi
+    </p>
+  </div>
+  </footer>
+
+  <script src="../scripts/global.js"></script>
+</body>
+</html>
